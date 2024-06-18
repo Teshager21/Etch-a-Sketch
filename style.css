@@ -6,8 +6,8 @@
 }
 
 .gridElement{
-    background-color: #ffc600;
-    border: 1px solid;
+    /* background-color: #ffc600; */
+    border: 0.1px solid #f3f3f3;
     width: 30px;
     height: 30px;
 }
@@ -24,6 +24,6 @@
     flex-wrap: wrap;
     width: 482px;
     height: 482px;
-    border: 1px solid;
+    border: 1px solid #808080;
     gap:0px;
 }
