@@ -1,3 +1,26 @@
 *{
+    /* background-color: #ff33; */
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.gridElement{
     background-color: #ffc600;
+    border: 3px solid;
+    width: 80px;
+    height: 80px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.grid {
+    width: 500px;
+    height: 500px;
+    border: 3px solid;
 }
