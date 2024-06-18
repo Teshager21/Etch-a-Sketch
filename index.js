@@ -4,10 +4,7 @@ const handleHover=(e)=>{
     let opacity =parseInt(e.target.getAttribute('data-opacity'));
     e.target.setAttribute('data-opacity', opacity+1)
     e.target.style.opacity=opacity*0.1;
-    // e.target.style.opacity=0.3;
-    // console.log('current opacity is: ',currentOpacity)
-   
-    console.log( e.target.getAttribute('data-opacity'));
+    e.target.style.border='none'
 }
 for(let i=0;i<256;i++){
   let Element=document.createElement('div');
@@ -21,7 +18,7 @@ for(let i=0;i<256;i++){
 
 const setGridSize=(e)=>{
     // alert(e.target)
-    let size=input('input sth');
+    let size=prompt('input the number of cells per side: ','64');
 }
 
 document.getElementById('btnSize').addEventListener('click',setGridSize)
