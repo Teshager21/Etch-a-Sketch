@@ -5,6 +5,15 @@
     box-sizing:content-box;
 }
 
+nav {
+    padding-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
 .gridElement{
     /* background-color: #ffc600; */
     /* border: 0.1px solid lightgray; */
@@ -16,7 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
     gap:1rem;
 }
 
