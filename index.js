@@ -27,7 +27,7 @@ const createGrid=(numOfCellsPerSide)=>{
 }
 
 const setGridSize=(e)=>{
-    let inputNumberOfCells=parseInt(prompt('input the number of cells per side: ','64'));
+    let inputNumberOfCells=parseInt(prompt('input the number of cells per side [1-100]: ','50'));
     if(inputNumberOfCells>100 || inputNumberOfCells<=0 || !inputNumberOfCells){
       alert ("Please input values between: 1-100")
       setGridSize();
