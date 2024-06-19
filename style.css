@@ -2,21 +2,22 @@
     /* background-color: #ff33; */
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    box-sizing:content-box;
 }
 
 .gridElement{
     /* background-color: #ffc600; */
-    border: none;
+    /* border: 0.1px solid lightgray; */
     opacity: 0.3;
 }
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 4rem;
-    gap:4rem;
+    gap:1rem;
 }
 
 .grid {
@@ -38,4 +39,8 @@ button {
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    border:1px solid gray;
+    border-radius: 0.5rem;
+    background-color: gray;
+    color:#fff;
 }

@@ -9,7 +9,7 @@ const handleHover=(e)=>{
     e.target.style.border='none'
 }
 const createGrid=(numOfCellsPerSide)=>{
-  size=482/numOfCellsPerSide-1;
+  size=482/numOfCellsPerSide;
   console.log(`size of cell is: ${size}px`);
   for(let i=0;i<numOfCellsPerSide*numOfCellsPerSide;i++){
     let Element=document.createElement('div');
@@ -24,15 +24,16 @@ const createGrid=(numOfCellsPerSide)=>{
 }
 
 const setGridSize=(e)=>{
-    // alert(e.target)
     let inputNumberOfCells=parseInt(prompt('input the number of cells per side: ','64'));
+    if(inputNumberOfCells>100 || inputNumberOfCells<=0 || !inputNumberOfCells){
+      alert ("Please input values between: 1-100")
+      setGridSize();
+    }
     let gridElements=document.querySelectorAll('.gridElement');
     for(let el of gridElements){
         el.remove();
       }
      createGrid(inputNumberOfCells);
-    
-    // console.log('heeeey',document.querySelector('.gridElement').style.width);
 }
 createGrid(numOfCellsPerSide);
 document.getElementById('btnSize').addEventListener('click',setGridSize)
