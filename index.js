@@ -4,6 +4,7 @@ let numOfCellsPerSide=50;
 const handleHover=(e)=>{
     e.target.classList.add('hover')
     let opacity =parseInt(e.target.getAttribute('data-opacity'));
+    if(opacity===1)
     e.target.style.backgroundColor=generateRandomColor(); 
 
     e.target.setAttribute('data-opacity', opacity+1)
