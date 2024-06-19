@@ -4,6 +4,8 @@ let numOfCellsPerSide=50;
 const handleHover=(e)=>{
     e.target.classList.add('hover')
     let opacity =parseInt(e.target.getAttribute('data-opacity'));
+    e.target.style.backgroundColor=generateRandomColor(); 
+
     e.target.setAttribute('data-opacity', opacity+1)
     e.target.style.opacity=opacity*.2;
     e.target.style.border='none'
@@ -15,7 +17,7 @@ const createGrid=(numOfCellsPerSide)=>{
     let Element=document.createElement('div');
     Element.classList.add('gridElement')
     Element.style.width= `${size}px`;
-    Element.style.height= `${size}px`; 
+    Element.style.height= `${size}px`;
     Element.className='gridElement'
     Element.addEventListener('mouseover',handleHover);
     Element.setAttribute('data-opacity',1)
@@ -40,7 +42,7 @@ const generateRandomColor=()=>{
   let red = Math.floor(Math.random()*253);
   let blue = Math.floor(Math.random()*253);
   let green = Math.floor(Math.random()*253);
-  let color =`rgb(${red},${green},${blue}))`
+  let color =`rgb(${red},${green},${blue})`
   console.log(color);
   return color;
 
