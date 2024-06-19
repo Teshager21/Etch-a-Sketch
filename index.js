@@ -35,6 +35,17 @@ const setGridSize=(e)=>{
       }
      createGrid(inputNumberOfCells);
 }
+//Randomize color 
+const generateRandomColor=()=>{
+  let red = Math.floor(Math.random()*253);
+  let blue = Math.floor(Math.random()*253);
+  let green = Math.floor(Math.random()*253);
+  let color =`rgb(${red},${green},${blue}))`
+  console.log(color);
+  return color;
+
+}
+
 createGrid(numOfCellsPerSide);
 document.getElementById('btnSize').addEventListener('click',setGridSize)
 
